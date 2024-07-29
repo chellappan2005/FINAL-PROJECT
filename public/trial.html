@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            height: 100%;
+            background-image: url("./bg.png");
+            background-position: left center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .navbar {
+            width: calc( 100% - 4px - 4vw );  /*subtract border width from both sides + margins*/
+            background-color: white;
+            border-color: grey;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 6px;
+            display: flex;
+            margin-top: 2vh;
+            margin-bottom: 3vh;
+            margin-left: 2vw;
+            margin-right: 2vw;
+        }
+        .navbar .logo{
+            font-size: 1.2em;
+            justify-content: center;
+            display: contents;
+        }
+        .search{
+            text-align: left;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            margin: 1.5vh 2vw;
+        }
+        .search input[type="search"] {
+            border-radius: 20px;
+            font-size: 1.3em;
+            padding: 1vh 2vw;   /* it is padding: vertical horizontal*/
+        }
+
+        .search-mobile{
+            text-align: left;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            margin-top: 6vh;
+            margin-bottom: 3vh;
+        }
+        .search-mobile input[type="search"] {
+            border-radius: 20px;
+            font-size: 1.3em;
+            padding: 1vh 2vw;   /*padding: vertical horizontal*/
+            /* background-color: aqua; */
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="navbar">
+            <span class="logo">
+                <span style="color: orange;">Easy</span>
+                <span style="color: green;">Life</span>
+            </span>
+            <span class="search">
+                <input id="search-box" type="search" placeholder="Search..."/>
+            </span>
+        </div>
+    </div>
+
+    <!-- <script src="./trial.js"></script> -->
+</body>
+</html>

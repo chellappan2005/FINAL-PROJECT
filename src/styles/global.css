@@ -1,0 +1,21 @@
+body {
+    margin: 0%;
+    height: 100%;
+    padding: 0%;
+    background-image: url("../assets/bg.png");
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-image: url("../assets/bg_small.jpg");
+        background-position: left center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0%;
+        height: 100%;
+        padding: 0%;
+    }
+}
